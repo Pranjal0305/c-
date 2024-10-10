@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class Employee
+{
+private:
+    int Id;
+    float Salary;
+    string Name;
+
+public:
+    int getdata()
+    {
+          cout << "Enter the id" << endl;
+        cin >> Id;
+        cout << "Enter the salary" << endl;
+        cin >> Salary;
+        cout << "Enter the name" << endl;
+        cin >> Name;
+    }
+    int setdata()
+    {
+        cout << "________________________________________" << endl;
+        cout << "Enter the id " << Id << endl;
+        cout << "Enter the salary " << Salary << endl;
+        cout << "Enter the name " << Name << endl;
+        cout << "________________________________________" << endl;
+    }
+};
+
+int main()
+
+{
+    int size=5;
+    Employee E[size];
+    for (int i=0;i<size;i++){
+        E[i].getdata();
+    }
+    
+    return 0;
+}
